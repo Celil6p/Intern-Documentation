@@ -1,0 +1,30 @@
+<h1>User Management Screen UI Specification</h1>
+
+<h2>Requirements</h2>
+<ul>
+    <li>The user management screen should allow the user to view and add users.</li>
+    <li>The user should be able to hide disabled users.</li>
+    <li>The user should be able to sort the list of users by id, username, email, and enabled or disabled state.</li>    
+    <li>The user should be able to filter the list of users by role (Guest, Admin, SuperAdmin).</li>
+    <li>The user should be able to toggle new user panel with a button.</li>
+</ul>
+
+<h2>UI Components</h2>
+<ul>
+    <li>User Table: A table that displays the list of users, with columns for is, username, email, role, and enabled or disabled state. The table should have the ability to sort and filter the list of users.</li>
+    <li>New User button: A button that opens a modal for adding a new user.</li>
+    <li>Hide Disabled Users checkbox: A checkbox that hides the disabled user.</li>
+</ul>
+
+<h2>Behavior</h2>
+<ul>
+    <li>When the user clicks the "New User" button, a side panel should appear with a form for adding a new user. The form should include fields for Username, Display Name, Phone, Email, Userrole selection, and enabled checkbox.</li>
+    <li>When the user sorts or filters the list of users, the table should update to reflect the new sorting or filtering criteria.</li>
+    <li>When the user checks Hide Disabled Users checkbox, disabled users should disappear from the list.</li>
+</ul>
+<h2>Note</h2>
+<ul>
+    <li>The above-mentioned functionalities can be achieved using the library like TailwindCSS, React Table, React-Bootstrap, etc.</li>
+    <li>The developer should take care of the validation of the form fields and handling the errors.</li>
+    <li>The developer should also handle the necessary server calls to fetch/update the data.</li>
+</ul>
